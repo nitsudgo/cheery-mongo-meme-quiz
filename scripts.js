@@ -5,6 +5,7 @@ const resultSection = document.getElementById("result-section");
 
 const startBtn = document.getElementById("start-btn");
 const restartBtn = document.getElementById("restart-btn");
+const cyaBtn = document.getElementById("cya-btn");
 
 const questionText = document.getElementById("question-text");
 const answersContainer = document.getElementById("answers-container");
@@ -19,8 +20,16 @@ let userAnswers = {}; // Stores counts for each result type
 // --- EVENT LISTENERS ---
 startBtn.addEventListener("click", startQuiz);
 restartBtn.addEventListener("click", restartQuiz);
+cyaBtn.addEventListener("click", leaveQuiz);
 
 // --- FUNCTIONS ---
+
+/**
+ * Leaves the quiz.
+ */
+function leaveQuiz() {
+  window.location.href = 'https://www.youtube.com/watch?v=E9pW6PwEayQ&ab_channel=NathanHatton'
+}
 
 /**
  * Starts the quiz, hiding the landing page and showing the first question.
