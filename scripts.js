@@ -112,7 +112,7 @@ function showResult() {
   resultContent.innerHTML = `
         <h2 class="text-3xl font-bold text-gray-900 mb-4">${result.title}</h2>
         <div class="flex flex-col items-center">
-          ${result.image}
+          <img src="${result.image}" alt="${result.image}"/>
         </div>
         <p class="text-gray-600 my-4">${result.description}</p>
         <div class="grid grid-cols-2 gap-2">
