@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Which #deery Couple Meme Are You?</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/gh/nastyox/Rando.js@master/code/plain-javascript/2.0.0/rando-min.js"></script>
+    </head>
+    <body
+        class="bg-gray-100 text-gray-800 flex items-center justify-center min-h-screen p-4"
+    >
+        <div
+            class="w-full max-w-md mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8"
+        >
+            <!-- Landing Page -->
+            <div id="landing-page" class="flex flex-col items-center text-center fade-in">
+                    <img
+                        class="w-64"
+                        src="https://media.tenor.com/4Ioo6LKVrQ4AAAAj/amifatcat-cute.gif"
+                    />
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Which #deery Couple Meme Are You?
+                </h1>
+                <div class="flex flex-col gap-4 mb-8 text-gray-600">
+                    <p>
+                        So you've brushed up on the couple lore and want to try your hand at finding out which significant event or entity you're most like?
+                    </p>
+                    <p>
+                        Click the button below to begin, and immerse yourself in the deep and rich lore that has accrued over the span of about two months~
+                    </p>
+                </div>
+                <button
+                    id="start-btn"
+                    class="w-full bg-emerald-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors duration-300 shadow-md"
+                >
+                    LET'S GO
+                </button>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-section" class="hidden">
+                <div id="question-container" class="fade-in">
+                    <p
+                        id="progress-text"
+                        class="text-sm text-gray-500 mb-2"
+                    ></p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                        <div
+                            id="progress-bar"
+                            class="bg-emerald-600 h-2.5 rounded-full"
+                            style="width: 0%"
+                        ></div>
+                    </div>
+                    <h2
+                        id="question-text"
+                        class="text-2xl font-bold text-gray-900 mb-6"
+                    ></h2>
+                    <div id="answers-container" class="space-y-3">
+                        <!-- Answers will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div id="result-section" class="hidden">
+                <div id="result-content" class="text-center fade-in">
+                    <!-- Result content will be dynamically inserted here -->
+                </div>
+                <button
+                    id="restart-btn"
+                    class="w-full mt-8 bg-emerald-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors duration-300 shadow-md"
+                >
+                    Take Again
+                </button>
+            </div>
+        </div>
+
+        <script src="quizData.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
